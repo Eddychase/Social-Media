@@ -12,7 +12,7 @@ export const userSlice = createSlice({
       state.user = action.payload;
     },
     // Use the PayloadAction type to declare the contents of `action.payload`
-    logout: (state, action) => {
+    logout: (state) => {
       state.user = null;
     },
   },

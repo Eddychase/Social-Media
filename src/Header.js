@@ -7,9 +7,21 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import { auth } from './Firebase';
+import { useDispatch } from 'react-redux';
+import { logout } from './features/userSlice';
 
 
 function Header() {
+    const dispatch = useDispatch();
+
+
+    const logoutOfApp = () => {
+        dispatch(logout())
+        auth.signOut();
+    };
+
+
     return (
         <div className='header'>
             <div className='header_left'>
@@ -27,7 +39,10 @@ function Header() {
                 <HeaderOptions Icon={BusinessCenterIcon} title='Jobs' />
                 <HeaderOptions Icon={ChatIcon} title='Messaging' />
                 <HeaderOptions Icon={NotificationsIcon} title='Notifications' />
-                <HeaderOptions avatar='http://www.gravatar.com/avatar/3b3be63a4c2a439b013787725dfce802?d=identicon' title='Me' />
+                <HeaderOptions
+                    avatar={true}
+                    title='Me'
+                    onClick={logoutOfApp} />
 
 
 
