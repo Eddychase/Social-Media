@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    color:gray;
-    cursor:pointer;
+    color: white;
+    cursor: pointer;
 }
 
 .headerOptions_icon {
@@ -14,8 +14,9 @@
 }
 
 .headerOptions:hover {
-    color:black;
+    color: black;
 }
+
 .headerOptions_title {
     font-size: 12px;
     font-weight: 400;

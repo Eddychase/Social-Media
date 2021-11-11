@@ -35,13 +35,13 @@ function Header() {
 
             <div className='header_right'>
                 <HeaderOptions Icon={HomeIcon} title='Home' />
-                <HeaderOptions Icon={SupervisorAccountIcon} title='Social Network' />
-                <HeaderOptions Icon={BusinessCenterIcon} title='Jobs' />
+                <HeaderOptions Icon={SupervisorAccountIcon} title='Friends' />
+                <HeaderOptions Icon={BusinessCenterIcon} title='Projects' />
                 <HeaderOptions Icon={ChatIcon} title='Messaging' />
                 <HeaderOptions Icon={NotificationsIcon} title='Notifications' />
                 <HeaderOptions
                     avatar={true}
-                    title='Me'
+                    title='Profile'
                     onClick={logoutOfApp} />
 
 

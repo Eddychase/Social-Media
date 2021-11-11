@@ -30,6 +30,11 @@ function Widgets() {
                 <InfoIcon />
             </div>
             {newsArticle('Eddy Chase is Back', 'Breaking news - 900 readers')}
+            {newsArticle('Brian Ryan is Back', 'Breaking news - 1200 readers')}
+            {newsArticle('Meta is the Future', 'Breaking news - 2500 readers')}
+            {newsArticle('CryptoCurrency and Success', 'Breaking news - 2500 readers')}
+            {newsArticle('Future of Web Development', 'Breaking news - 2500 readers')}
+            {newsArticle('Skype-Fumble of the Decade', 'Breaking news - 2500 readers')}
         </div>
 
     )
